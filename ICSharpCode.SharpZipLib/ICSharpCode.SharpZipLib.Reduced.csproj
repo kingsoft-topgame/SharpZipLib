@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B87A829D-190B-4351-B253-8C9A9A72C041}</ProjectGuid>
+    <ProjectGuid>{0E7413FF-EB9E-4714-ACF2-BE3A6A7B2FFD}</ProjectGuid>
     <RootNamespace>ICSharpCode.SharpZipLib</RootNamespace>
     <AssemblyName>ICSharpCode.SharpZipLib</AssemblyName>
     <OutputType>Library</OutputType>
@@ -65,6 +65,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="BZip2\BZip2.cs" />
+    <Compile Include="BZip2\BZip2Constants.cs" />
+    <Compile Include="BZip2\BZip2Exception.cs" />
+    <Compile Include="BZip2\BZip2InputStream.cs" />
+    <Compile Include="BZip2\BZip2OutputStream.cs" />
     <Compile Include="Checksums\Adler32.cs" />
     <Compile Include="Checksums\Crc32.cs" />
     <Compile Include="Checksums\IChecksum.cs" />
@@ -79,7 +84,19 @@
     <Compile Include="Encryption\PkzipClassic.cs" />
     <Compile Include="Encryption\ZipAESStream.cs" />
     <Compile Include="Encryption\ZipAESTransform.cs" />
+    <Compile Include="GZip\GZipConstants.cs" />
+    <Compile Include="GZip\GZipException.cs" />
+    <Compile Include="GZip\GzipInputStream.cs" />
+    <Compile Include="GZip\GzipOutputStream.cs" />
     <Compile Include="SharpZipBaseException.cs" />
+    <Compile Include="Tar\InvalidHeaderException.cs" />
+    <Compile Include="Tar\TarArchive.cs" />
+    <Compile Include="Tar\TarBuffer.cs" />
+    <Compile Include="Tar\TarEntry.cs" />
+    <Compile Include="Tar\TarException.cs" />
+    <Compile Include="Tar\TarHeader.cs" />
+    <Compile Include="Tar\TarInputStream.cs" />
+    <Compile Include="Tar\TarOutputStream.cs" />
     <Compile Include="Zip\Compression\Deflater.cs" />
     <Compile Include="Zip\Compression\DeflaterConstants.cs" />
     <Compile Include="Zip\Compression\DeflaterEngine.cs" />
